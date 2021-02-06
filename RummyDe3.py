@@ -86,13 +86,13 @@ def verificar_TC(jugada):
 #AMBOS DOS
 def verificacion_chida_del_tablero(tablero):#esta funcion debe ser cambiada con las funciones alternativas
     for jugadas in tablero:
-        aux1=verificar_jugada_v1(jugadas)#cambiar por una laternativa
+        aux1=verificar_jugada_FV(jugadas)#cambiar por una laternativa
         if(aux1==False):
             return False
         aux2=len(jugadas)
         if(aux2<3):
             return False# verifica que las jugadas sean de 3 o mas fichas
-    aux=verificar_fichas_v1(tablero)
+    aux=verificar_fichas_v2(tablero)
     if(aux==False):
         return False
     return True
